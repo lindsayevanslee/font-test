@@ -1,0 +1,6 @@
+@font-face {
+font-family: "MedievalFrenchTEST-Regular";
+src: url("MedievalFrenchTEST-Regular.woff") format("woff");
+}
+
+body { font-family: MedievalFrenchTEST-Regular, "Times New Roman"}

@@ -1,8 +1,5 @@
 ---
 title: "Font test"
-format: 
-  html:
-    css: test_style.css
 ---
 
 ## Quarto
