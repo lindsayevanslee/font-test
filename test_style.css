@@ -1,6 +1,6 @@
 @font-face {
-font-family: "MedievalFrenchTEST-Regular";
-src: url("MedievalFrenchTEST-Regular.woff") format("woff");
+font-family: "LeeNewGothic-Regular";
+src: url("LeeNewGothic-Regular.woff") format("woff"), url("LeeNewGothic-Regular.otf") format("opentype");
 }
 
-body { font-family: MedievalFrenchTEST-Regular, "Times New Roman"}
+body { font-family: LeeNewGothic-Regular, "Times New Roman"}
