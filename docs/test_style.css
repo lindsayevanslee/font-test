@@ -3,4 +3,15 @@ font-family: "LeeNewGothic-Regular";
 src: url("LeeNewGothic-Regular.woff") format("woff"), url("LeeNewGothic-Regular.otf") format("opentype");
 }
 
-body { font-family: LeeNewGothic-Regular, "Times New Roman"}
+body { 
+  font-family: LeeNewGothic-Regular, "Times New Roman";
+  font-size: 40px;
+}
+
+h1 {
+  font-size: 80px;
+}
+
+h2 {
+  font-size: 60px;
+}

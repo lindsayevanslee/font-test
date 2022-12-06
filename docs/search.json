@@ -11,6 +11,6 @@
     "href": "font-test.html#a-running-code-section",
     "title": "Font test",
     "section": "A running code section",
-    "text": "A running code section\nWhen you click the Render button a document will be generated that includes both content and the output of embedded code. You can embed code like this:\n\n1 + 1\n\n[1] 2\n\n\nYou can add options to executable code like this\n\n\n[1] 4\n\n\nThe echo: false option disables the printing of code (only output is displayed)."
+    "text": "A running code section\nWhen you click the Render button a document will be generated that includes both content and the output of embedded code. You can embed code like this:\n\n1 + 1\n\n[1] 2\n\n\nYou can add options to executable code like this\n\n\n[1] 4\n\n\nThe echo: false option disables the printing of code (only output is displayed).\nLook at all these letters:\nA B C D E F G H I J K L M N O P Q R S T U V W X Y Z"
   }
 ]
