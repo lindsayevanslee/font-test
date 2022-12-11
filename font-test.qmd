@@ -2,33 +2,88 @@
 title: "Font test"
 ---
 
-## A quarto document
+## Intro
 
-Quarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see <https://quarto.org>.
+This is a quick doc to showcase this font (currently called Lee New Gothic) and document the general steps for producing it, so that my little goldfish brain doesn't forget.
 
-## A running code section
-
-When you click the **Render** button a document will be generated that includes both content and the output of embedded code. You can embed code like this:
-
-```{r}
-1 + 1
-```
-
-You can add options to executable code like this
-
-```{r}
-#| echo: false
-2 * 2
-```
-
-The `echo: false` option disables the printing of code (only output is displayed).
+## All the glyphs
 
 Look at all these letters:
 
 A B C D E F G H I J K L M N O P Q R S T U V W X Y Z
 
+a b c d e f g h i j k l m n o p q r s t u v w x y z
+
 Does this emoji work? 
 
 🙂
+
+
+## Software
+
+I am using [Glyphs 3](https://glyphsapp.com) for creating this font. I am using [Flow](https://moleskinestudio.com/support/flow/introduction/flow-overview/) for sketching glyphs.
+
+
+## Steps
+
+### Getting started
+
+Good guides: 
+
+- [Drawing good paths](https://glyphsapp.com/learn/drawing-good-paths)
+
+
+1. Create new font
+1. Set parameters under Font Info: Units per Em, Ascender, Descender, etc
+
+
+### Lower case letters
+
+
+1. Make new components to share between glyphs by creating new glyphs with names starting with _
+1. Draw the letters, and right click to add components
+
+
+### Upper case letters
+
+1. Set custom Exports parameters: 
+- Disable Subroutines (on): needed because the capitals are very complicated
+2. Copy sketches into glyph, and set size 
+3. Use "Trace Image" plugin to trace the image
+4. Clean up
+5. Delete image
+
+### Emojis
+
+- [Creating an Apple color font](https://glyphsapp.com/learn/creating-an-apple-color-font)
+- [Vertical metrics](https://glyphsapp.com/learn/vertical-metrics)
+
+1. Set custom Font parameters: 
+- Use Typo Metrics (on)
+2. Set custom Masters parameters:
+- hheaAscender, hheaDescender, hheaLineGap: needed to avoid clipping
+3. Set custom Export parameters:
+- Export sbix Table: needed for emojis to render
+- SBIX to SVG: needed to increase support for color font
+4. Create new glyph called "_emoji_origin", set width to be the same as the UPM for the font, and put small path in the bottom left corner where the emoji's bottom left corner will be anchored
+5. Create new glyph with the emoji needed (either generate from glyph list or add directly by using the exact name or unicode)
+6. Add component _emoji_origin to emoji and decompose
+7. Prepare image files for emoji:
+- Original image should be square png with transparent background
+- Create a copies of images with different resolutions. For example set first image as resolution 512, with a height and width that works when you paste image into the glyph. Next image should have half resolution (256) and half height and width
+- Set names of files as all "glyphname resolution.png", eg "slightlySmilingFace 512.png"
+8. Use script Add sbix Images to Font to batch-import your emoji images
+- This is a mekkablue script that can be added from Plugin Manager -> Scripts
+
+
+
+
+
+
+
+
+
+
+
 
 

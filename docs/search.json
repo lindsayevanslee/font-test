@@ -4,13 +4,27 @@
     "href": "font-test.html",
     "title": "Font test",
     "section": "",
-    "text": "Quarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see https://quarto.org."
+    "text": "This is a quick doc to showcase this font (currently called Lee New Gothic) and document the general steps for producing it, so that my little goldfish brain doesn’t forget."
   },
   {
-    "objectID": "font-test.html#a-running-code-section",
-    "href": "font-test.html#a-running-code-section",
+    "objectID": "font-test.html#all-the-glyphs",
+    "href": "font-test.html#all-the-glyphs",
     "title": "Font test",
-    "section": "A running code section",
-    "text": "A running code section\nWhen you click the Render button a document will be generated that includes both content and the output of embedded code. You can embed code like this:\n\n1 + 1\n\n[1] 2\n\n\nYou can add options to executable code like this\n\n\n[1] 4\n\n\nThe echo: false option disables the printing of code (only output is displayed).\nLook at all these letters:\nA B C D E F G H I J K L M N O P Q R S T U V W X Y Z\nDoes this emoji work?\n🙂"
+    "section": "All the glyphs",
+    "text": "All the glyphs\nLook at all these letters:\nA B C D E F G H I J K L M N O P Q R S T U V W X Y Z\na b c d e f g h i j k l m n o p q r s t u v w x y z\nDoes this emoji work?\n🙂"
+  },
+  {
+    "objectID": "font-test.html#software",
+    "href": "font-test.html#software",
+    "title": "Font test",
+    "section": "Software",
+    "text": "Software\nI am using Glyphs 3 for creating this font. I am using Flow for sketching glyphs."
+  },
+  {
+    "objectID": "font-test.html#steps",
+    "href": "font-test.html#steps",
+    "title": "Font test",
+    "section": "Steps",
+    "text": "Steps\n\nGetting started\nGood guides:\n\nDrawing good paths\n\n\nCreate new font\nSet parameters under Font Info: Units per Em, Ascender, Descender, etc\n\n\n\nLower case letters\n\nMake new components to share between glyphs by creating new glyphs with names starting with _\nDraw the letters, and right click to add components\n\n\n\nUpper case letters\n\nSet custom Exports parameters:\n\n\nDisable Subroutines (on): needed because the capitals are very complicated\n\n\nCopy sketches into glyph, and set size\nUse “Trace Image” plugin to trace the image\nClean up\nDelete image\n\n\n\nEmojis\n\nCreating an Apple color font\nVertical metrics\n\n\nSet custom Font parameters:\n\n\nUse Typo Metrics (on)\n\n\nSet custom Masters parameters:\n\n\nhheaAscender, hheaDescender, hheaLineGap: needed to avoid clipping\n\n\nSet custom Export parameters:\n\n\nExport sbix Table: needed for emojis to render\nSBIX to SVG: needed to increase support for color font\n\n\nCreate new glyph called “_emoji_origin”, set width to be the same as the UPM for the font, and put small path in the bottom left corner where the emoji’s bottom left corner will be anchored\nCreate new glyph with the emoji needed (either generate from glyph list or add directly by using the exact name or unicode)\nAdd component _emoji_origin to emoji and decompose\nPrepare image files for emoji:\n\n\nOriginal image should be square png with transparent background\nCreate a copies of images with different resolutions. For example set first image as resolution 512, with a height and width that works when you paste image into the glyph. Next image should have half resolution (256) and half height and width\nSet names of files as all “glyphname resolution.png”, eg “slightlySmilingFace 512.png”\n\n\nUse script Add sbix Images to Font to batch-import your emoji images\n\n\nThis is a mekkablue script that can be added from Plugin Manager -> Scripts"
   }
 ]

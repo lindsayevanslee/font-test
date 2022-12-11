@@ -5,13 +5,17 @@ src: url("LeeNewGothic-Regular.woff") format("woff"), url("LeeNewGothic-Regular.
 
 body { 
   font-family: LeeNewGothic-Regular, "Times New Roman";
-  font-size: 40px;
+  font-size: 30px;
 }
 
 h1 {
-  font-size: 80px;
+  font-size: 2em;
 }
 
 h2 {
-  font-size: 60px;
+  font-size: 1.5em;
+}
+
+h3 {
+  font-size: 1.2em;
 }
