@@ -74,6 +74,7 @@ Good guides:
 - Set names of files as all "glyphname resolution.png", eg "slightlySmilingFace 512.png"
 8. Use script Add sbix Images to Font to batch-import your emoji images
 - This is a mekkablue script that can be added from Plugin Manager -> Scripts
+- If it doesn't work, you can read error messages by opening the Macro Panel
 
 
 
